@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webxdownloader</title>this is an early version
+    <title>webxdownloader</title>
   
 </head>
-<h3>please use fullscreen for better experience</h3>
+<style>
+    #screen{
+        position: relative;
+        width: 800px;
+        height: 800px;
+        background-color: green;
+    }
+    #scan, #bezel{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    
+    .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+    #content{
+        font-family: VT323;
+        padding: 50px;
+        font-size: 20px;
+        
+    }
+
+</style>
 <body>
-    <h1>welcome to ddos</h1> 
-    <button onclick="bestFunction()" > startup</button>
-    <p id="password"></p>
+    <div id="screen">
+        <img src="scanlines.png" id="scan" class="noselect">
+        <img src="bezel.png" id="bezel" class="noselect">
+        <div id="content">
+            <title></title>this is an early version
+            <h3>please use fullscreen for better experience</h3>
+            <h1>welcome to ddos</h1>
+            <button id="STARTUP" onclick="bestFunction()" > startup</button>
+            <p id="TEXT"></p>
+            
+        </div>
+    </div>
+     
+    
     
    
    <script src="ddos.js">
