@@ -7,9 +7,11 @@ function bestFunction() {
     let password;
     if (confirm("passwordRequired") == true) {
       var x =document.createElement("INPUT");
+      /* < a textbox elhelyezkedése >*/ 
       x.style.position = 'absolute';
-      x.style.left = '100px';
-      x.style.top = '100px';
+      x.style.left = '56px';
+      x.style.top = '250px';
+      /*<--------------------------->*/
       x.setAttribute("type" , "text");
       document.body.appendChild(x)
       const button = document.getElementById("STARTUP");

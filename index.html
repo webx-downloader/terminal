@@ -9,12 +9,14 @@
   
 </head>
 <style>
+    /* a képernyő hátulja állításához szolgáló felület*/
     #screen{
         position: relative;
         width: 800px;
         height: 800px;
         background-color: green;
     }
+    /* a képernyő széle és a képernyő effect állításához szolgáló felület*/ 
     #scan, #bezel{
         position: absolute;
         width: 100%;
@@ -23,7 +25,7 @@
         left: 0;
         pointer-events: none;
     }
-    
+    /* hogy ne lehessen interaktálni a képekkel és a szöveggel*/
     .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -33,10 +35,11 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-    #content{
-        font-family: VT323;
+    /* a képen belüli szöveg típusa és mérete*/
+    #content{ 
+        font-family: VT323;    
         padding: 50px;
-        font-size: 20px;
+        font-size: 20px; 
         
     }
 
@@ -50,7 +53,7 @@
             <h3>please use fullscreen for better experience</h3>
             <h1>welcome to ddos</h1>
             <button id="STARTUP" onclick="bestFunction()" > startup</button>
-            <p id="TEXT"></p>
+           
             
         </div>
     </div>
