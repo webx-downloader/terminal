@@ -11,20 +11,31 @@
 <style>
     /* a képernyő hátulja állításához szolgáló felület*/
     #screen{
-        position: relative;
+        position: fixed;
         width: 800px;
         height: 800px;
         background-color: green;
     }
-    /* a képernyő széle és a képernyő effect állításához szolgáló felület*/ 
-    #scan, #bezel{
-        position: absolute;
+    /* a képernyő effect állításához szolgáló felület*/ 
+    #scan{
+        position: fixed;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         pointer-events: none;
     }
+    /*a képernyő széle állításához szolgáló  felület*/
+    #bezel{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+
+
     /* hogy ne lehessen interaktálni a képekkel és a szöveggel*/
     .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -42,6 +53,12 @@
         font-size: 20px; 
         
     }
+    #STARTUP{
+        
+
+    }
+
+    
 
 </style>
 <body>
@@ -50,7 +67,7 @@
         <img src="bezel.png" id="bezel" class="noselect">
         <div id="content">
             <title></title>this is an early version
-            <h3>please use fullscreen for better experience</h3>
+            <h3 style ="position: relative; left: 70px; top: 5px;">please use fullscreen for better experience</h3>
             <h1>welcome to ddos</h1>
             <button id="STARTUP" onclick="bestFunction()" > startup</button>
            
