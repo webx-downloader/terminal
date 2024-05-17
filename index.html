@@ -25,8 +25,9 @@
         left: 0;
         pointer-events: none;
     }
-    /*a képernyő széle állításához szolgáló  felület*/
+    /* a képernyő széle állításához szolgáló  felület*/
     #bezel{
+        opacity: 100% ;
         position: fixed;
         width: 100%;
         height: 100%;
@@ -45,15 +46,27 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-}
+    }
     /* a képen belüli szöveg típusa és mérete*/
     #content{ 
         font-family: VT323;    
         padding: 50px;
         font-size: 20px; 
-        
+        text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
     }
     #STARTUP{
+        position: initial;
+        left: 100px; ;
+        box-shadow: 0 0 2em black;
+        background-color:white;
+        border-radius: 20px;
+      margin: 20px;
+      
+        
+        
+       
+    
+    
         
 
     }
@@ -63,7 +76,7 @@
 </style>
 <body>
     <div id="screen">
-        <img src="scanlines.png" id="scan" class="noselect">
+        <img src="scanlines.png" id="scan" class="noselect" >
         <img src="bezel.png" id="bezel" class="noselect">
         <div id="content">
             <title></title>this is an early version
