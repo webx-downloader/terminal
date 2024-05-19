@@ -15,6 +15,7 @@
         width: 800px;
         height: 800px;
         background-color: green;
+        
     }
     /* a képernyő effect állításához szolgáló felület*/ 
     #scan{
@@ -53,25 +54,64 @@
         padding: 50px;
         font-size: 20px; 
         text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
+        
+
     }
+    /* a startup gomb testreszabása */
     #STARTUP{
         position: initial;
-        left: 100px; ;
-        box-shadow: 0 0 2em black;
-        background-color:white;
+        box-shadow: 0 0 1cap rgb(49, 45, 45);
+        background-color:rgb(252, 0, 0);
         border-radius: 20px;
-      margin: 20px;
-      
+        margin: 90px;
+        margin-top: 0.1%;
+        color: rgb(0, 0, 0);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 2cap;
+        text-align: center;
+        display: block;
+        text-decoration: none;
         
-        
-       
-    
-    
-        
+ 
 
     }
-
-    
+    /* a please use fullscreen szöveg testreszabása */ 
+    #pleaseUse{
+        position: relative;
+        left: 100px;
+        top: 5px;
+        mix-blend-mode: difference;
+        color: #53ff03;
+        
+    }
+    /* a welcome to szöveg testreszabása */
+    #welcome{
+        position: relative;
+        left: 95px;
+        mix-blend-mode: difference;
+        color: #53ff03;
+        font-size: 85px;
+        bottom: 28px;
+    }
+    /* a this is szöveg testreszabása */
+    #titlei{
+        position: relative;
+        left: 150px;
+        color: rgba(0, 255, 0, 0.411);
+        mix-blend-mode: difference;
+    }
+    #alGore{
+        position: fixed;
+        mix-blend-mode: difference;
+        left: 600px;
+        top: 605px;
+        margin: 100px;
+        color: rgba(0, 255, 0, 0.411);
+        
+    }
 
 </style>
 <body>
@@ -79,24 +119,43 @@
         <img src="scanlines.png" id="scan" class="noselect" >
         <img src="bezel.png" id="bezel" class="noselect">
         <div id="content">
-            <title></title>this is an early version
-            <h3 style ="position: relative; left: 70px; top: 5px;">please use fullscreen for better experience</h3>
-            <h1>welcome to ddos</h1>
+            <br>h1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+            <h3 id="titlei">this is an early version</h3>
+            <h2 id="pleaseUse">please use fullscreen for better experience</h2>
+            <h1 id="welcome">welcome to ddos</h1>
+            <h3 id="alGore">   TODAY'S NEWS ╏ AL GORE INVENTS THE INTERNET                           ‖ 
+                ‖                     ╏ MICHAEL JACKSON OWNS PLUTO                             ‖ 
+                ‖                     ╏ RONALD REAGAN VISITS BELGIUM BY ACCIDENT               ‖ 
+                ‖                     ╏ FIRST DEMOCRAT IN SPACE 
+            </h3>
             <button id="STARTUP" onclick="bestFunction()" > startup</button>
-           
-            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         </div>
     </div>
-     
-    
-    
-   
    <script src="ddos.js">
 
 
     
    </script>
 
-   <script src="ddos1.js"></script> 
+   <script src="ddos1.js">
+
+
+   </script> 
 </body>
 </html>
