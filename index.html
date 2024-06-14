@@ -12,9 +12,10 @@
     /* a képernyő hátulja állításához szolgáló felület*/
     #screen{
         position: fixed;
-        width: 800px;
-        height: 800px;
+        width: 100%;
+        height: 100%;
         background-color: green;
+        
         
     }
     /* a képernyő effect állításához szolgáló felület*/ 
@@ -25,6 +26,8 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        
+        
     }
     /* a képernyő széle állításához szolgáló  felület*/
     #bezel{
@@ -35,6 +38,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        
     }
 
 
@@ -54,7 +58,7 @@
         padding: 50px;
         font-size: 20px; 
         text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
-        
+       
 
     }
     /* a startup gomb testreszabása */
@@ -113,14 +117,37 @@
         color: rgba(0, 255, 0, 0.411);
         
     }
+    #dec-top{
+    top: 3vh;
+    color: rgba(0, 255, 0, 0.411);
+    font-family: VT323;
+    position: fixed;
+    left: 0vh;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    
+    }     
+    #dec-bottom{
+        
+    position: fixed;
+    bottom: 3vh;
+    color: rgba(0, 255, 0, 0.411);
+    font-family: VT323;
+    left: 0vh;
+    mix-blend-mode: difference;
+    pointer-events: none;
+       
+    
+}
+    
 
 </style>
 <body>
     <div id="screen">
         <img src="scanlines.png" id="scan" class="noselect" >
-        <img src="bezel.png" id="bezel" class="noselect">
-        <div id="content">
-            <br>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+        <div  id="content">
+              <h3 id="dec-top">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
+              <h3 id="dec-bottom">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
             <h3 id="titlei">this is an early version</h3>
             <h2 id="pleaseUse">please use fullscreen for better experience</h2>
             <h1 id="welcome">welcome to ddos</h1>
@@ -129,23 +156,9 @@
                                          ╏ RONALD REAGAN VISITS BELGIUM BY ACCIDENT     ‖ 
                                          ╏ FIRST DEMOCRAT IN SPACE                      ‖ ╏
             </h3>
+            <img src="bezel.png" id="bezel" class="noselect">
+              
             <button id="STARTUP" onclick="bestFunction()" > startup</button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         </div>
     </div>
    <script src="ddos.js">

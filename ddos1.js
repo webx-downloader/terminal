@@ -34,7 +34,7 @@ function bestFunction() {
 
 
    // kis kiegészítés hogy ne lehessen kijelölni semmit //
-   document.addEventListener('dragstart', function (e) {
+   document.addEventLis0tener('dragstart', function (e) {
     e.preventDefault();
 });
 document.addEventLis0tener('contextmenu', function (e) {
