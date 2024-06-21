@@ -17,8 +17,8 @@ function bestFunction() {
       var x =document.createElement("INPUT");
       /* < a textbox elhelyezkedése >*/ 
       x.style.position = 'absolute';
-      x.style.left = '150px';
-      x.style.top = '335px';
+      x.style.left = '8vw';
+      x.style.top = '30vh';
       /*<--------------------------->*/
       x.setAttribute("type" , "text");
       document.body.appendChild(x)
