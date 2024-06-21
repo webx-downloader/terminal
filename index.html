@@ -17,6 +17,7 @@
         background-color: green;
         
         
+        
     }
     /* a képernyő effect állításához szolgáló felület*/ 
     #scan{
@@ -38,6 +39,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        
         
     }
 
@@ -85,10 +87,11 @@
     /* a please use fullscreen szöveg testreszabása */ 
     #pleaseUse{
         position: relative;
-        left: 100px;
-        top: 5px;
         mix-blend-mode: difference;
         color: #53ff03;
+        left: 5.5%;
+        
+        
         
     }
     /* a welcome to szöveg testreszabása */
@@ -106,14 +109,16 @@
         left: 150px;
         color: rgba(0, 255, 0, 0.411);
         mix-blend-mode: difference;
+        font-weight: bold;
+        
     }
+    
     #alGore{
         position: fixed;
         mix-blend-mode: difference;
-        left:40%;
-        top: 66%;
-        margin: 6%;
-        margin-left: 11%;
+        right: 5vw;
+        bottom: 10vh;
+        width: 50vw;
         color: rgba(0, 255, 0, 0.411);
         
     }
@@ -125,7 +130,7 @@
     left: 0vh;
     mix-blend-mode: difference;
     pointer-events: none;
-    
+   
     }     
     #dec-bottom{
         
@@ -146,9 +151,10 @@
     <div id="screen">
         <img src="scanlines.png" id="scan" class="noselect" >
         <div  id="content">
-              <h3 id="dec-top">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
-              <h3 id="dec-bottom">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
-            <h3 id="titlei">this is an early version</h3>
+              <h3 id="dec-top">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
+              <h3 id="dec-bottom">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
+                <img src="bezel.png" id="bezel" class="noselect">
+                <h3 id="titlei">this is an early version</h3>
             <h2 id="pleaseUse">please use fullscreen for better experience</h2>
             <h1 id="welcome">welcome to ddos</h1>
             <h3 id="alGore">TODAY'S NEWS ==>╏ AL GORE INVENTS THE INTERNET                 ‖ 
@@ -156,7 +162,7 @@
                                          ╏ RONALD REAGAN VISITS BELGIUM BY ACCIDENT     ‖ 
                                          ╏ FIRST DEMOCRAT IN SPACE                      ‖ ╏
             </h3>
-            <img src="bezel.png" id="bezel" class="noselect">
+           
               
             <button id="STARTUP" onclick="bestFunction()" > startup</button>
         </div>
