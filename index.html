@@ -6,156 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webxdownloader</title>
-  
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    /* a képernyő hátulja állításához szolgáló felület*/ /* működik maradjon így */
-    #screen{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: green;
-        
-        
-        
-    }
-    /* a képernyő effect állításához szolgáló felület*/ /* működik maradjon így */
-    #scan{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        
-        
-    }
-    /* a képernyő széle állításához szolgáló  felület*/ /* működik maradjon így */
-    #bezel{
-        opacity: 100% ;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        
-        
-    }
-    /* hangyfoci effect beállítása */
-    #static{
-        width: 100%;
-        position: fixed;
-        opacity: 5%;
-        height: 100%;
-        pointer-events: none;
-        left: 0;
-        top: 0;
-    }
 
 
-    /* hogy ne lehessen interaktálni a képekkel és a szöveggel*/ /* lehet hogy működik maradjon így */
-    .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-    }
-    /* a képen belüli szöveg típusa és mérete*/ /* működik maradjon így */
-    #content{ 
-        font-family: VT323;    
-        padding: 50px;
-        font-size: 20px; 
-        text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
-       
-
-    }
-    /* a startup gomb testreszabása */ /* majd megcsináljuk */
-    #STARTUP{
-        position: initial;
-        box-shadow: 0 0 1cap rgb(49, 45, 45);
-        background-color:rgb(252, 0, 0);
-        border-radius: 20vw;
-        margin: 8.8vw;
-        margin-top: 0.1%;
-        color: rgb(0, 0, 0);
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 0.7vw;
-        padding-right: 0.7vw;
-        font-size: 2cap;
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        
- 
-
-    }
-    /* a please use fullscreen szöveg testreszabása */ /* működik maradjon így */
-    #pleaseUse{
-        position: relative;
-        mix-blend-mode: difference;
-        color: #53ff03;
-        left: 1.8%;
-    }
-    /* a welcome to szöveg testreszabása */ /* működik maradjon így */
-    #welcome{
-        position: relative;
-        left: 1.5%;
-        mix-blend-mode: difference;
-        color: #53ff03;
-        font-size: 85px;
-        bottom: 28px;
-       
-    }
-    /* a this is szöveg testreszabása */ /* működik maradjon így */
-    #titlei{
-        position: relative;
-        left: 150px;
-        color: rgba(0, 255, 0, 0.411);
-        mix-blend-mode: difference;
-        font-weight: bold;
-        
-    }
-    /* a today's news szöveg testreszabása */ /* működik maradjon így */
-    #alGore{
-        position: fixed;
-        mix-blend-mode: difference;
-        right: 3.3vw;
-        bottom: 10vh;
-        width: 50vw;
-        color: rgba(0, 255, 0, 0.411);
-        
-    }
-    /* az alsó dekorációs sáv testreszabása */ /* működik maradjon így */
-    #dec-top{
-    top: 3vh;
-    color: rgba(0, 255, 0, 0.411);
-    font-family: VT323;
-    position: fixed;
-    left: 0vh;
-    mix-blend-mode: difference;
-    pointer-events: none;
-   
-    }   
-    /* a felső dekorációs sáv testreszabása */ /* működik maradjon így */
-    #dec-bottom{
-    position: fixed;
-    bottom: 3.1vh;
-    color: rgba(0, 255, 0, 0.411);
-    font-family: VT323;
-    left: 0vh;
-    mix-blend-mode: difference;
-    pointer-events: none;
-       
-    
-    }
    
 
-</style>
+
 <body>
     <div id="screen">
         <img src="scanlines.png" id="scan" class="noselect" >
@@ -187,6 +44,10 @@
    <script src="ddos1.js">
 
 
+   </script>
+   <script src="style.css">
+   
+   
    </script> 
 </body>
 </html>
