@@ -42,6 +42,16 @@
         
         
     }
+    /* hangyfoci effect beállítása */
+    #static{
+        width: 100%;
+        position: fixed;
+        opacity: 5%;
+        height: 100%;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+    }
 
 
     /* hogy ne lehessen interaktálni a képekkel és a szöveggel*/ /* lehet hogy működik maradjon így */
@@ -142,13 +152,14 @@
     pointer-events: none;
        
     
-}
-    
+    }
+   
 
 </style>
 <body>
     <div id="screen">
         <img src="scanlines.png" id="scan" class="noselect" >
+        <img src="static.gif" id="static" alt="noselect">
         <div  id="content">
               <h3 id="dec-top">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
               <h3 id="dec-bottom">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4>  
