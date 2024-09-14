@@ -4,21 +4,15 @@ console.log(location.href);
 console.log("password:downloadwebxnow")
 //GOMB A HTMLBE IS ÉS ÉRTESÍTÉS COMMAND//
 var gomb = document.getElementById("STARTUP");
-
-gomb.addEventListener("mousedown", function(e){
-    if (e.button == 2) { // jobb kattintás
-        e.preventDefault();
-     // eltávolítja az árnyékot, ami a lenyomott hatást kelti
-    }
-});
 function bestFunction() {
     let password;
     if (confirm("passwordRequired") == true ) {
       var x =document.createElement("INPUT");
       /* < a textbox elhelyezkedése >*/ 
-      x.style.position = 'absolute';
-      x.style.left = '8vw';
+      x.style.position = 'fixed';
+      x.style.left = '10vw';
       x.style.top = '30vh';
+      x.style.marginLeft = ' 2vw'
       /*<--------------------------->*/
       x.setAttribute("type" , "text");
       document.body.appendChild(x)
