@@ -10,8 +10,8 @@ function bestFunction() {
       var x =document.createElement("INPUT");
       /* < a textbox elhelyezkedése >*/ 
       x.style.position = 'fixed';
-      x.style.left = '10vw';
-      x.style.top = '30vh';
+      x.style.left = '7%';
+      x.style.top = '40%';
       x.style.marginLeft = ' 2vw'
       /*<--------------------------->*/
       x.setAttribute("type" , "text");
