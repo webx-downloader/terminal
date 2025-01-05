@@ -8,15 +8,21 @@ function bestFunction() {
     let password;
     if (confirm("passwordRequired") == true ) {
       var x =document.createElement("INPUT");
+              x.setAttribute("type","text");
+              const STARTUP = 
+              document.getElementById("STARTUP");
+              const buttonRect =
+              STARTUP.getBoundingClientRect();
       /* < a textbox elhelyezkedése >*/ 
-      x.style.position = 'fixed';
-      x.style.left = '7%';
-      x.style.top = '35%';
-      x.style.marginLeft = ' 2vw'
-      x.style.marginTop = ' 2vh'
+      x.style.position = 'absolute';
+      x.style.left = (buttonRect.left - 20) + "px";
+      x.style.top = (buttonRect.top - 50) + "px";
+      x.style.width = "200px";
+      x.style.height = "20px";
+      x.style.padding = "px";
+      x.style.fontSize = "16px";
       
       /*<--------------------------->*/
-      x.setAttribute("type" , "text");
       document.body.appendChild(x)
       const button = document.getElementById("STARTUP");
       button.disabled = true;
