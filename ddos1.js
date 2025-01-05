@@ -11,8 +11,10 @@ function bestFunction() {
       /* < a textbox elhelyezkedése >*/ 
       x.style.position = 'fixed';
       x.style.left = '7%';
-      x.style.top = '40%';
+      x.style.top = '35%';
       x.style.marginLeft = ' 2vw'
+      x.style.marginTop = ' 2vh'
+      
       /*<--------------------------->*/
       x.setAttribute("type" , "text");
       document.body.appendChild(x)
