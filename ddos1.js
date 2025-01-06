@@ -15,13 +15,17 @@ function bestFunction() {
               STARTUP.getBoundingClientRect();
       /* < a textbox elhelyezkedése >*/ 
       x.style.position = 'absolute';
-      x.style.left = (buttonRect.left - 20) + "px";
+      x.style.left = (buttonRect.left - 30) + "px";
       x.style.top = (buttonRect.top - 50) + "px";
-      x.style.width = "200px";
+      x.style.width = "150px";
       x.style.height = "20px";
       x.style.padding = "px";
       x.style.fontSize = "16px";
-      
+      x.style.opacity = "50%";
+      x.style.backgroundColor = "black";
+      x.style.color = "green";
+      x.style.border = "2px solid black"
+      x.style.outline = "none";
       /*<--------------------------->*/
       document.body.appendChild(x)
       const button = document.getElementById("STARTUP");

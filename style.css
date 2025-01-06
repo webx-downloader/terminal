@@ -5,12 +5,13 @@
         width: 100%;
         height: 100%;
         background-color: green;
+        background-image: radial-gradient(transparent,rgba(0, 0, 0, 0.297));
         
         
         
     }
     /* a képernyő effect állításához szolgáló felület*/ /* működik maradjon így */
-    #scan{
+    #scan, .scan-bar{
         position: fixed;
         width: 100%;
         height: 100%;
@@ -29,6 +30,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        box-shadow: 2px 2px 8px rgb(0, 0, 0);
         
         
     }
@@ -80,6 +82,7 @@
         text-align: center;
         display: block;
         text-decoration: none;
+        
         
  
 
@@ -145,4 +148,26 @@
     
     }
 
- 
+    .scan-bar{
+        animation: scan 4s infinite;
+    }
+    
+    .scan{
+        height: 40px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+/* kell a vhs effecthez*/
+@keyframes scan {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+} 
