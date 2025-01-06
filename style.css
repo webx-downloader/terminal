@@ -7,19 +7,16 @@
         background-color: green;
         background-image: radial-gradient(transparent,rgba(0, 0, 0, 0.297));
         
-        
-        
     }
     /* a képernyő effect állításához szolgáló felület*/ /* működik maradjon így */
-    #scan, .scan-bar{
+    #scan, .scan-bar, .scan-bar2, .scan-bar3, .scan-bar4, .scan-bar5, .scan-bar6, .scan-bar7, .scan-bar8, .scan-bar9, .scan-bar10, .scan-bar11{
         position: fixed;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         pointer-events: none;
-        
-        
+
     }
     /* a képernyő széle állításához szolgáló  felület*/ /* működik maradjon így */
     #bezel{
@@ -31,7 +28,6 @@
         left: 0;
         pointer-events: none;
         box-shadow: 2px 2px 8px rgb(0, 0, 0);
-        
         
     }
     /* hangyfoci effect beállítása */
@@ -123,6 +119,7 @@
         width: 50vw;
         color: rgba(0, 255, 0, 0.411);
         
+        
     }
     /* az alsó dekorációs sáv testreszabása */ /* működik maradjon így */
     #dec-top{
@@ -161,6 +158,146 @@
         
       
     }
+
+    .scan-bar2{
+        animation: scan2 2s infinite;
+    }
+
+    .scan2{
+        height: 40px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar3{
+        animation: scan3 1s infinite;
+    }
+
+    .scan3{
+        height: 40px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar4{
+        animation: scan4 8s infinite;
+    }
+
+    .scan4{
+        height: 40px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar5{
+        animation: scan5 12s infinite;
+    }
+
+    .scan5{
+        height: 40px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar6{
+        animation: scan6 20s infinite;
+    }
+
+    .scan6{
+        height: 80px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar7{
+        animation: scan7 30s infinite;
+    }
+
+    .scan7{
+        height: 100px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar8{
+        animation: scan8 40s infinite;
+    }
+
+    .scan8{
+        height: 130px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar9{
+        animation: scan9 0.5s infinite;
+    }
+
+    .scan9{
+        height: 20px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar10{
+        animation: scan10 0.2s infinite;
+    }
+
+    .scan10{
+        height: 20px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
+
+    .scan-bar11{
+        animation: scan11 0.1s infinite;
+    }
+
+    .scan11{
+        height: 20px;
+        width: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        
+      
+    }
 /* kell a vhs effecthez*/
 @keyframes scan {
     0% {
@@ -171,3 +308,103 @@
         opacity: 0;
     }
 } 
+/* kell a vhs2 effecthez*/
+@keyframes scan2 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs3 effecthez*/
+@keyframes scan3 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs hosszú effecthez*/
+@keyframes scan4 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs hosszú effecthez*/
+@keyframes scan5 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs nagyon hosszú effecthez*/
+@keyframes scan6 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs nagyon hosszú effecthez*/
+@keyframes scan7 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs nagyon hosszú effecthez*/
+@keyframes scan8 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/* kell a vhs rövid effecthez*/
+@keyframes scan9 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/*kell a vhs rövidebb effecthez*/
+@keyframes scan10 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+/*kell a vhs még rövidebb effecthez*/
+@keyframes scan11 {
+    0% {
+        transform: translateY(0%);
+    }    
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
