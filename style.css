@@ -6,7 +6,7 @@
         height: 100%;
         background-color: green;
         background-image: radial-gradient(transparent,rgba(0, 0, 0, 0.297));
-        
+        display: flex;
     }
     /* a képernyő effect állításához szolgáló felület*/ /* működik maradjon így */
     #scan, .scan-bar, .scan-bar2, .scan-bar3, .scan-bar4, .scan-bar5, .scan-bar6, .scan-bar7, .scan-bar8, .scan-bar9, .scan-bar10, .scan-bar11{
@@ -118,6 +118,7 @@
         bottom: 10vh;
         width: 50vw;
         color: rgba(0, 255, 0, 0.411);
+        
         
         
     }
