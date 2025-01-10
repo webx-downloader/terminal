@@ -26,6 +26,7 @@ function bestFunction() {
       x.style.color = "green";
       x.style.border = "2px solid black"
       x.style.outline = "none";
+      x.style.cursor= "url('pointer_original.png'),auto";
       /*<--------------------------->*/
       document.body.appendChild(x)
       const button = document.getElementById("STARTUP");

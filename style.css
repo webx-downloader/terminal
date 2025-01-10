@@ -1,11 +1,25 @@
-
-   /* a képernyő hátulja állításához szolgáló felület*/ /* működik maradjon így */
+    body{
+        margin: 0;
+        padding: 0;
+        cursor: url('cursor.png'), auto;
+    }
+    
+    /* a képernyő hátulja állításához szolgáló felület*/ /* működik maradjon így */
     #screen{
         position: fixed;
         width: 100%;
         height: 100%;
         background-color: green;
         background-image: radial-gradient(transparent,rgba(0, 0, 0, 0.297));
+        cursor: url('cursor.png'), auto;
+    }
+    .edge-top{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        margin: 0;
+        padding: 0;
     }
     /* a képernyő effect állításához szolgáló felület*/ /* működik maradjon így */
     #scan, .scan-bar, .scan-bar2, .scan-bar3, .scan-bar4, .scan-bar5, .scan-bar6, .scan-bar7, .scan-bar8, .scan-bar9, .scan-bar10, .scan-bar11{
@@ -15,7 +29,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
-
+        
     }
     /* a képernyő széle állításához szolgáló  felület*/ /* működik maradjon így */
     #bezel{
@@ -26,8 +40,8 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        box-shadow: 2px 2px 8px rgb(0, 0, 0);
-        
+        box-shadow: 2px 2px 8px rgb(0, 0, 0);   
+        cursor: url('cursor.png'), auto;
     }
     /* hangyfoci effect beállítása */
     #static{
@@ -77,6 +91,8 @@
         text-align: center;
         display: block;
         text-decoration: none;
+        cursor: url('pointer_original.png'), auto
+       
         
         
  
@@ -143,6 +159,14 @@
     pointer-events: none;
        
     
+    }
+    .edge-top{
+        position: relative;
+        pointer-events: none;
+        z-index: 2;
+    }
+    .edge-top:hover{
+        cursor: url('cursor.png'), auto;
     }
 
     .scan-bar{
