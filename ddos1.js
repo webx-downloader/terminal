@@ -6,7 +6,7 @@ console.log("password:downloadwebxnow")
 var gomb = document.getElementById("STARTUP");
 function bestFunction() {
     let password;
-    if (confirm("passwordRequired") == true ) {
+    if (confirm("PASSWORD REQUIRED") == true ) {
       var x =document.createElement("INPUT");
               x.setAttribute("type","text");
               const STARTUP = 
