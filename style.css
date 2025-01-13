@@ -1,8 +1,9 @@
-    /* kb a teljes weboldal hátterét és részét állítja */
+    /* kb a teljes weboldal részét állítja */
     body{
-        margin: 0;
-        padding: 0;
+        margin: 0 ;
+        padding: 0 ;
         cursor: auto;
+
     }
     
     /* a képernyő hátulja állításához szolgáló felület*/ 
@@ -11,16 +12,49 @@
         width: 100%;
         height: 100%;
         background-color: green;
-        background-image: radial-gradient(transparent,rgba(0, 0, 0, 0.297));
         cursor: url('cursor.png'), auto;
-    }
-    .edge-top{
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 10px;
+
 
     }
+    /* a weboldal szélén lévő kurzor feature működéséhez kell*/
+    .edge-top,.edge-bottom,.edge-left,.edge-right{
+        position: fixed;
+        pointer-events: auto;
+        z-index: 100;
+    }
+    /*a weboldal felső részén lévő kurzor feature állításához kell  */
+    .edge-top{
+        width: 100%;
+        height: 4%;
+        top: 0;
+        left: 0;
+        cursor: auto;
+    }
+    /*a weboldal alsó részén lévő kurzor feature állításához kell  */
+    .edge-bottom{
+        width: 100%;
+        height: 6%;
+        bottom: 0;
+        left: 0;
+        cursor: auto;
+    }
+    /*a weboldal bal oldalán lévő kurzor feature állításához kell  */
+    .edge-left{
+        width: 2.8%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor:auto;
+    }
+    /*a weboldal jobb oldalán lévő kurzor feature állításához kell  */
+    .edge-right{
+        width: 2.8%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        cursor: auto;
+    }
+
     /* a képernyő effect állításához szolgáló felület és a képernyő hiba csík effecteket működésére szolgál*/ 
     #scan, .scan-bar, .scan-bar2, .scan-bar3, .scan-bar4, .scan-bar5, .scan-bar6, .scan-bar7, .scan-bar8, .scan-bar9, .scan-bar10, .scan-bar11{
         position: fixed;
@@ -29,7 +63,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        
+
     }
     /* a képernyő széle állításához szolgáló  felület*/ 
     #bezel{
@@ -40,8 +74,9 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        box-shadow: 2px 2px 8px rgb(0, 0, 0);   
-        cursor: url('cursor.png'), auto;
+        box-shadow: 2px 2px 8px rgb(0, 0, 0);  
+
+
     }
     /* hangyfoci effect beállítása */
     #static{
@@ -71,8 +106,7 @@
         padding: 50px;
         font-size: 20px; 
         text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
-       
-
+    
     }
     /* a startup gomb testreszabása */ 
     #STARTUP{
@@ -93,9 +127,6 @@
         text-decoration: none;
         cursor: url('pointer_original.png'), auto
        
-        
-        
- 
 
     }
     /* a please use fullscreen szöveg testreszabása */ 
@@ -160,14 +191,7 @@
        
     
     }
-    .edge-top{
-        position: fixed;
-        pointer-events: none;
-        z-index: 2;
-    }
-    .edge-top:hover{
-        cursor: url('cursor.png'), auto;
-    }
+
     /* az első képernyő hiba csík animació hossza */
     .scan-bar{
         animation: scan 4s infinite;
