@@ -104,7 +104,7 @@
     #content{ 
         font-family: VT323;    
         padding: 5vw; /*vagy 5vw vagy 3.2vw vagy 50px */
-        font-size: 2vw; /*vagy 2vw vagy 1.3vw vagy 20px */
+        font-size: 100%; /*vagy 2vw vagy 1.3vw vagy 20px */
         text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
    /* top: 10vh; */
    /* left: 10vw; */
