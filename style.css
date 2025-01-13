@@ -74,7 +74,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        box-shadow: 2px 2px 8px rgb(0, 0, 0);  
+        box-shadow: 0.2vw 0.2vw 0.8vw rgb(1, 1, 1);  
 
 
     }
@@ -103,9 +103,11 @@
     /* a képen belüli szöveg típusa és mérete*/ 
     #content{ 
         font-family: VT323;    
-        padding: 50px;
-        font-size: 20px; 
+        padding: 3.2vw; /*vagy 5vw */
+        font-size: 1.3vw; /*vagy 2vw */
         text-shadow: 2px 200px 500px black,5 5 20em black, 3 1 2em black;
+        top: 10vh;
+        left: 10vw;
     
     }
     /* a startup gomb testreszabása */ 
