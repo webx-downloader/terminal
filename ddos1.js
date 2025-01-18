@@ -4,12 +4,15 @@ console.log(location.href);
 console.log("password:downloadwebxnow")
 //GOMB A HTMLBE IS ÉS ÉRTESÍTÉS COMMAND//
 var gomb = document.getElementById("STARTUP");
+var attempCount = 0;
+
 function bestFunction() {
     let password;
     if (confirm("PASSWORD REQUIRED") == true ) {
       var text_box =document.createElement("INPUT");
               text_box.setAttribute("type","text");
               text_box.setAttribute("id","passwordInput");
+              text_box.setAttribute("autocomplete","off");
               const STARTUP = 
               document.getElementById("STARTUP");
               const buttonRect =
@@ -50,9 +53,15 @@ function bestFunction() {
     if (input === correctPassword) {
       window.location.href = "https://www.pornhub.com/";
     } else {
-      alert("INCORRECT PASSWORD");
+      attempCount++;
+      if (attempCount >= 3) {
+        document.getElementById("passwordInput").disabled = true;
+        alert("TOO MANY INCORRECT ATTEMPTS. ACCES DENIED.");
+      } else {
+        alert("INCORRECT PASSWORD. ATTEMPT " + attempCount + " OF 3");
     }
   }
+}
 
 
    // kis kiegészítés hogy ne lehessen kijelölni semmit //
