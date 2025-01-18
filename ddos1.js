@@ -7,37 +7,52 @@ var gomb = document.getElementById("STARTUP");
 function bestFunction() {
     let password;
     if (confirm("PASSWORD REQUIRED") == true ) {
-      var x =document.createElement("INPUT");
-              x.setAttribute("type","text");
+      var text_box =document.createElement("INPUT");
+              text_box.setAttribute("type","text");
+              text_box.setAttribute("id","passwordInput");
               const STARTUP = 
               document.getElementById("STARTUP");
               const buttonRect =
               STARTUP.getBoundingClientRect();
       /* < a textbox elhelyezkedése >*/ 
-      x.style.position = 'absolute';
-      x.style.left = (buttonRect.left - 30) + "px";
-      x.style.top = (buttonRect.top - 50) + "px";
-      x.style.width = "150px";
-      x.style.height = "20px";
-      x.style.padding = "px";
-      x.style.fontSize = "16px";
-      x.style.opacity = "50%";
-      x.style.backgroundColor = "black";
-      x.style.color = "green";
-      x.style.border = "2px solid black"
-      x.style.outline = "none";
-      x.style.cursor= "url('pointer_original.png'),auto";
+      text_box.style.position = 'absolute';
+      text_box.style.left = (buttonRect.left - 30) + "px";
+      text_box.style.top = (buttonRect.top - 50) + "px";
+      text_box.style.width = "150px";
+      text_box.style.height = "20px";
+      text_box.style.padding = "px";
+      text_box.style.fontSize = "16px";
+      text_box.style.opacity = "50%";
+      text_box.style.backgroundColor = "black";
+      text_box.style.color = "green";
+      text_box.style.border = "2px solid black"
+      text_box.style.outline = "none";
+      text_box.style.cursor= "url('pointer_original.png'),auto";
       /*<--------------------------->*/
-      document.body.appendChild(x)
+      document.body.appendChild(text_box)
       const button = document.getElementById("STARTUP");
       button.disabled = true;
+
+      text_box.addEventListener("keypress", function(event){
+        if(event.key ==="Enter") {
+             checkPassword();
+          }
+      });
       
     } else {
        alert("ACCESS DENIED")
-    }
-   
-  }
+    } 
+}
 
+  function checkPassword() {
+    var input = document.getElementById("passwordInput").value;
+    var correctPassword = "downloadwebxnow";
+    if (input === correctPassword) {
+      window.location.href = "https://www.pornhub.com/";
+    } else {
+      alert("INCORRECT PASSWORD");
+    }
+  }
 
 
    // kis kiegészítés hogy ne lehessen kijelölni semmit //
