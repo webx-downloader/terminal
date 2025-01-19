@@ -49,19 +49,26 @@ function bestFunction() {
 
   function checkPassword() {
     var input = document.getElementById("passwordInput").value;
-    var correctPassword = "downloadwebxnow";
-    if (input === correctPassword) {
-      window.location.href = "https://www.pornhub.com/";
-    } else {
+    var correctPassword = ["downloadwebxnow", "dev"];
+    var incorrectPassword = ["fasz", "FASZ", "kurva", "KURVA", "kúrva", "KÚRVA", "anyad", "ANYAD", "anyád", "ANYÁD", "KURVAANYÁD", "KÚRVAANYÁD", "KURVAANYAD", "KÚRVAANYAD", "kurvaanyad", "kúrvaanyad", "kurvaanyád", "kúrvaanyád", "kurva anyad", "kúrva anyad", "kurva anyád", "kúrva anyád", "KURVA ANYAD", "KÚRVA ANYAD", "KURVA ANYÁD", "KÚRVA ANYÁD"];
+    if (correctPassword.includes(input)) {
+      window.location.href = "https://emupedia.net/beta/emuos/";
+    } else if (incorrectPassword.includes(input)) {
+        alert("THERE YOU GO YOU LITTLE PIECE OF SHIT. HAVE FUN!")
+        window.location.href = "https://www.pornhub.com/";
+        document.getElementById("passwordInput").disabled = true;
+      } else {
       attempCount++;
       if (attempCount >= 3) {
         document.getElementById("passwordInput").disabled = true;
         alert("TOO MANY INCORRECT ATTEMPTS. ACCES DENIED.");
+        
       } else {
         alert("INCORRECT PASSWORD. ATTEMPT " + attempCount + " OF 3");
     }
   }
 }
+
 
 
    // kis kiegészítés hogy ne lehessen kijelölni semmit //
