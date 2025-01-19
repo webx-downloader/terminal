@@ -30,7 +30,7 @@ function bestFunction() {
       text_box.style.color = "green";
       text_box.style.border = "2px solid black"
       text_box.style.outline = "none";
-      text_box.style.cursor= "url('pointer_original.png'),auto";
+      text_box.style.cursor= "url('text-cursor-real.png'),auto";
       /*<--------------------------->*/
       document.body.appendChild(text_box)
       const button = document.getElementById("STARTUP");
