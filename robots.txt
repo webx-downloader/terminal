@@ -1,4 +1,0 @@
-User-agents: *
-Allow: /
-Disallow: /Admin/
-Sitemap: https://webx-downloader.github.io/sitemap.xml
