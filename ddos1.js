@@ -9,7 +9,7 @@ var attempCount = 0;
 function bestFunction() {
     let password;
     if (confirm("PASSWORD REQUIRED") == true ) {
-      var text_box =document.createElement("INPUT");
+      var text_box = document.createElement("INPUT");
               text_box.setAttribute("type","text");
               text_box.setAttribute("id","passwordInput");
               text_box.setAttribute("autocomplete","off");
